@@ -2,27 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamad Sheikh Bakri | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="card">
-    <h1>Hello, I’m E</h1>
-    <p>Web Developer. I build clean, responsive websites.</p>
 
-<div class="buttons">
-  <a class="btn" href="https://github.com/milito-coder" target="_blank">GitHub</a>
-  <a class="btn outline" href="#" target="_blank">LinkedIn</a>
-</div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">MSB</div>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Portfolio Website</strong> — This website.</li>
-      <li><strong>Coming soon</strong> — Weather App.</li>
-      <li><strong>Coming soon</strong> — To-Do App.</li>
-    </ul>
-  </div>
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="tag">Full-Stack Web Developer</span>
+        <h1>Mohamad Sheikh Bakri</h1>
+        <p class="subtitle">
+          I’m a full-stack web developer focused on building reliable, user-friendly websites and web apps.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn" href="https://github.com/milito-coder" target="_blank">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/mohamad-sheikh-bakri-93b1a41aa/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Quick Info</h3>
+        <ul>
+          <li>Location: Türkiye</li>
+          <li>Focus: Web & WordPress</li>
+          <li>Status: Open to work</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="text">
+        I enjoy building modern web interfaces and connecting them with solid backend systems.
+        I care about clean code, performance, and real-world solutions.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">WordPress</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">APIs</span>
+        <span class="chip">Backend</span>
+        <span class="chip">Databases</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <div class="p-card">
+          <h3>Portfolio Website</h3>
+          <p class="muted">Personal portfolio website.</p>
+          <div class="p-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small btn-ghost" href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <h3>Weather App</h3>
+          <p class="muted">Coming soon.</p>
+          <div class="p-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small btn-ghost" href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <h3>To-Do App</h3>
+          <p class="muted">Coming soon.</p>
+          <div class="p-actions">
+            <a class="btn small" href="#">Live</a>
+            <a class="btn small btn-ghost" href="#">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="text">Let’s get in touch:</p>
+
+      <div class="contact-icons">
+        <a href="mailto:mhmdmilito43@gmail.com" class="icon">✉️ Email</a>
+        <a href="tel:+905347602682" class="icon">📞 Phone</a>
+        <a href="https://wa.me/905347602682" target="_blank" class="icon">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/mohamad-sheikh-bakri-93b1a41aa/" target="_blank" class="icon">💼 LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mohamad Sheikh Bakri</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
+
 
